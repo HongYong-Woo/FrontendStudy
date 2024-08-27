@@ -1,0 +1,20 @@
+*  {color: red;}
+
+p {color: green}
+
+h1 {font-size: 100px;
+    text-align: center;}
+
+#p1 {color: blue;}
+
+#p2 {color: brown;}
+
+.container {color: bisque; background-color: black;}
+
+.my-class1 {color: violet;}
+
+.my-class2 {background-color: aquamarine;}
+
+li.black {color: black;}
+
+.backBlue {background-color:blue;}

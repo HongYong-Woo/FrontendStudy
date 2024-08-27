@@ -1,0 +1,16 @@
+input[type="text"]{background-color: red;}
+
+input[type="password"]{background-color: blue;}
+
+
+/* #header h1, #header h2 { color: red;}
+
+#header >h1 {color: red;}
+#section > h1 {color: blue;} */
+
+h1:hover {color:aqua}
+h1:active {color:greenyellow}
+
+input:enabled{background-color: white;}
+input:disabled{background-color: grey;}
+input:focus{background-color: orange;}
