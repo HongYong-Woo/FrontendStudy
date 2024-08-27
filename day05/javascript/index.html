@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       let date = new Date();
+
+       let year = date.getFullYear();
+       let month = date.getMonth();
+       let day = date.getDate();
+       let week = date.getDay();
+       let hours = date.getHours();
+       let min = date.getMinutes();
+       let second = date.getSeconds();
+
+       alert(date);
+       alert('month : ' + (month +1) +'월');
+       alert('day : ' + day +'일');
+
+       if(hours< 12) {alert('오전');}
+        else if(hours >= 12) {alert('오후');}
+        
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
