@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>synchronous</title>
+</head>
+<body>
+    <script>
+        //sleep 함수는 일정시간(delay) 지난 후에 콜백함수(fun)를 호출한다.
+        function sleep(fun, delay=0) {
+            const delayTime = Date.now() + delay; //Date.now() 현재시간을 숫자(ms)로 반환
+    
+            while(Date.now() < delayTime);
+    
+            fun();
+        }
+    
+        function func1() {console.log('Im func1');}
+    
+        function func2() {console.log('Im func2');}
+    
+        sleep(func1, 5000);
+        func2();
+    
+        //sleep 함수는 3초후에 func1 호출, 그 다음에 func2
+        //현재 실행중인 테스크가 종료할 때까지 다음에 실행될 테스크가 대기하는 방식 => 동기 방식(synchronous)
+        //  : 실행 순서를 보장함 , 앞 테스크가 종료 될때까지 이후 테스크들이 블로킹 된다.
+    
+    </script>
+</body>
+</html>

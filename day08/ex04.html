@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asynchronous</title>
+</head>
+<body>
+    <script>
+  
+        function func1() {
+            let p = document.createElement("p");
+            p.innerHTML = '함수1';
+            document.body.appendChild(p);
+            console.log('Im func1');}
+    
+        function func2() {
+            let p = document.createElement("p");
+            p.innerHTML = '함수2';
+            document.body.appendChild(p);
+            console.log('Im func2');
+        }
+    
+       //타이머 함수를 이용해서 일정시간이 지나면 콜백 함수를 호출하도록 하는 코드
+       //타이머 함수 : setTimeout()     블로킹하지 않은 성질이 있다.
+    
+       setTimeout(func1, 3000);
+       func2();
+
+       //비동기 처리 (asynchronous)
+       //현재 실행중인 테스크가 종료되지 않는 상태라도, 다음 테스크를 곧바로 실행하는 방식
+       //비동기 처리 수행함수는 콜백패턴을 사용한다.
+       //콜헬(callback hell) 을 개선하기 위한 ==> 프로미스(promise)
+
+       //타이머 함수 : setTimeout, setInterval, HTTP 요청, 이벤트 핸들러 (비동기 처리 방식으로 동작한다.)
+    
+    </script>
+</body>
+</html>
