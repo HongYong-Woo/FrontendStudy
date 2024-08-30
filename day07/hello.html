@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*//(문제) 사용자에게 이름을 물어보고 입력받은 이름을 그대로 출력하시오.
+        let name = prompt('당신의 이름은');
+        alert(name);*/
+
+       /* //1. I am happy 세단어를 배열 status로 생성하세요
+        let status =['I', 'am', 'happy'];
+        alert(status);
+        //2.status 에서 am 단어를 삭제하세요.
+        let index = status.indexOf('am');
+        alert(status[index]);
+        status.splice(index,1);
+        //3. am이 삭제되었는지 확인하세요
+        alert(status);
+        //4. status 배열의 길이를 확인해주세요
+        alert(status.length);*/
+
+        /*//1. I study Javascript right now 5개의 단어를 배열 keyword로 생성하세요
+        let keyword =['I', 'study', 'Javascript', 'right', 'now'];
+        alert(keyword);
+        //2.keyword 에서 처음 두개의 단어를 삭제하세요.
+        keyword.splice(0,2);
+        //3.삭제완료된 keyword를 확인하세요
+        alert(keyword);
+        keyword.splice(0,0,'I', 'play');
+        alert(keyword);
+        keyword.splice(-1,0,'lala', 'Ooops');
+        alert(keyword); */
+
+
+     /*    let numberSet = [1,2];
+        alert(numberSet);
+        alert(numberSet.concat([3,4]));
+        alert(numberSet.concat([3,4], [5,6]));
+        let numSetAll = numberSet.concat([3,4], [5,6]);
+        numSetAll.forEach(alert);
+        numSetAll.forEach((item,index,array) => {
+            alert(`${item} is at index ${index} in ${array}`);
+        }); */
+
+/*      let dummy = [1,0,false];
+        alert(dummy.indexOf(0));
+        alert(dummy.indexOf(false));
+        alert(dummy.indexOf(null));
+        alert(dummy.includes(1)); */
+
+        //자바스크립트는 항등연산자 === (완전항등비교)
+
+        /* //특수 예외
+        const dummy1 =[NaN];
+        alert(dummy1.indexOf(NaN));
+        alert(dummy1.includes(NaN)); */
+
+
+        /* let length = ['I', 'am', 'Happy'].map(item=>item.length);
+        alert(length); */
+
+       /*  let length1 = [1,2,15];
+        length1.sort();
+        alert(length1);
+        //자바스크립트에서는 요소를 정렬할때 문자열로 취급한다.
+        function compareNumber(n1, n2) {
+            if(n1 > n2) return 1;
+            if(n1 == n2) return 0;
+            if(n1 < n2) return -1;
+        }
+        length1.sort(compareNumber);
+        alert(length1); */
+
+        //3. 문자열 처리와 정렬
+
+        //문자열 localeCompare 사용한다. 유니코드 기준 비교
+        let nation = ['Korea', 'Japan', 'America'];
+        alert(nation.sort((a,b)=>a>b?1:-1));
+
+        alert(nation.sort((a,b)=> a.localeCompare(b)));
+
+
+        
+
+    </script>
+</body>
+</html>

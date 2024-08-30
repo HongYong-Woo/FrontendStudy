@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsonTest</title>
+</head>
+<body>
+    <script>
+            // 이름은 Jon, 나이는 30, 회사는 SSGINC, 이사람의 정보를 user 객체로 생성하시오
+          /*   let user = { 
+                        name : 'Jon', 
+                        age : 30,
+                        isAdmin : false,
+                        auth : ['user','teamReader'], 
+                        company : 'SSGINC',
+                        married : null
+            };
+            
+            let json = JSON.stringify(user);
+            alert(json); */
+            
+            //문제 : 숫자 1을 JSON으로 인코딩한 결과를 출력해주세요.
+            //alert(JSON.stringify(1));
+
+            //문제 : 'test', 문자열, true, [1,2,3,4,5]
+            // alert(JSON.stringify('test'));
+            // alert(JSON.stringify(true));
+            // alert(JSON.stringify([1,2,3,4,5]));
+
+
+            /* let user = {
+                        sayHello(){alert("hello");},
+                        [Symbol("id")] : 12345,
+                        nothing : undefined, 
+                        name : 'Jon', 
+                        age : 30,
+                        isAdmin : false,
+                        auth : ['user','teamReader'], 
+                        company : 'SSGINC',
+                        married : null
+            };
+            alert(JSON.stringify(user)); */
+
+          /*   let meeting = {
+                            title : "Coffee Prince yunho",
+                            room : { age : 26,
+                                     isGirlfriend : false,
+                                     participants : ['천안', '판교']
+                            }
+            };
+            alert(JSON.stringify(meeting)); */
+
+
+/*             //Jjson 데이터를 객체로
+            let numbers = "[1,2,3,4,5]";
+            alert(numbers);
+            numbers = JSON.parse(numbers);
+            alert(numbers);
+ */
+ /*            let userData = '{"name" : "john", "friend" : ["용빈", "태환", "주환"]}'
+            alert(JSON.parse(userData).name); */
+
+        //    function factorial (number) {
+        //     if(number <=1) return 1;
+        //    return number*factorial(number-1);
+        //    }
+        //    alert(factorial(6));
+
+           function factorial (number) {
+            let result = 1;
+            while(true) {
+                if(number <=1) break;
+                result *= number--;
+            }
+            return result;
+           }
+           alert(factorial(5));
+        
+
+    </script>
+    
+</body>
+</html>
